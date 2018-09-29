@@ -10,13 +10,13 @@ public class ConexaoDB {
 			//Class.forName("com.mysql.jdbc.Driver").newInstance();
 			Class.forName("com.mysql.cj.jdbc.Driver").newInstance();
 			//online
-			//String url = "jdbc:mysql://node171950-portalacademico.jelasticlw.com.br/pupil?useTimezone=true&serverTimezone=UTC&useSSL=false";
-			//String username = "root";
-			//String password = "FliOJAmU4j";
-			//localhost
-			String url = "jdbc:mysql://localhost:3306/pupil?useTimezone=true&serverTimezone=UTC&useSSL=false";
+			String url = "jdbc:mysql://node171950-portalacademico.jelasticlw.com.br/pupil?useTimezone=true&serverTimezone=UTC&useSSL=false";
 			String username = "root";
-			String password = "root";			
+			String password = "FliOJAmU4j";
+			//localhost
+			//String url = "jdbc:mysql://localhost:3306/pupil?useTimezone=true&serverTimezone=UTC&useSSL=false";
+			//String username = "root";
+			//String password = "root";			
 			conn = DriverManager.getConnection(url, username, password);
 		} catch (Exception e) {
 			System.out.println("erro de conexão: " + e);
